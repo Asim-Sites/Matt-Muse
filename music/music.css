@@ -1,0 +1,106 @@
+@import url('http://getbootstrap.com/dist/css/bootstrap.css');
+@font-face {
+    font-family: afora;
+    src: url(../bebas_neue/BebasNeueRegular.otf);
+}
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    background: url(../musicbg.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.container-table {
+    display: table;
+}
+.vertical-center-row {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+#card-bg {
+    -webkit-box-shadow: -1px 0px 34px -1px rgba(0,0,0,1);
+    -moz-box-shadow: -1px 0px 34px -1px rgba(0,0,0,1);
+    box-shadow: -1px 0px 34px -1px rgba(0,0,0,1);
+    margin-top: 82px;
+    padding-top: 10px;
+    padding-bottom: 15px;
+    padding-bottom: 15px;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.527);
+    max-width: 50vw;
+    margin-bottom: 150px !important;
+}
+
+img.bg {
+    z-index: -1;
+    /* Set rules to fill background */
+    min-height: 100%;
+    min-width: 1024px;
+      
+    /* Set up proportionate scaling */
+    width: 100%;
+    height: auto;
+      
+    /* Set up positioning */
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+.social {
+    padding-top: 11px;
+    padding-bottom: 5px;
+}
+p {
+    padding-top: 12px;
+    font-size: 40px;
+    font-family: afora;
+}
+.social-box {
+    width: 230px;
+    height: 70px;
+    background-color: #ffffff;
+    margin: 5px;
+}
+/* .social.apple {
+    padding-bottom: 20px;
+} */
+  @media screen and (max-width: 1024px) { /* Specific to this particular image */
+    img.bg {
+      left: 50%;
+      margin-left: -512px;   /* 50% */
+    }
+  }
+
+.artist-name {
+    padding-top: 25px;
+    /* padding-bottom: 20px; */
+    font-family: afora;
+    font-size: 40px;
+    color: #000000;
+}
+
+.social:hover {
+    /* background-color: rgb(232, 232, 232); */
+    /* border-radius: 5px; */
+
+}
+
+@media(max-width: 960px) {
+    #card-bg {
+        max-width: 90vw;
+    }
+    iframe {
+        width: 80vw;
+        height: 270px;
+    }
+      .artist-name {
+        font-size: 26px;
+    }
+}

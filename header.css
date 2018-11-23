@@ -1,0 +1,38 @@
+@font-face {
+    font-family: afora;
+    src: url(bebas_neue/BebasNeueBold.otf);
+}
+*{
+    box-sizing: border-box;
+}
+.fa-bars {
+    color: #fff !important;
+    padding-right: 30px
+}
+.icon-bar {
+    /* padding-top: 10px; */
+    margin-right: 10px;
+}
+#header {
+    z-index: 3;
+    width: 100%;
+    color: #fff;
+    top: 0px;
+    text-align: center;
+    /* padding-top: 15px; */
+    position: absolute;
+    /* background: #000000; */
+    /* opacity: .85; */
+    background: linear-gradient(rgba(0, 0, 0, 0.69) 0%, rgba(0, 0, 0, 0.69) 50%, #141724 100%);
+}
+.navbar-brand {
+    padding-top: 20px !important;
+    font-size: 40px !important;
+}
+#header a {
+    padding-top: 20px !important;
+    z-index: 4;
+    font-size: 30px;
+    font-family: afora;
+    color: #fff;
+} 
