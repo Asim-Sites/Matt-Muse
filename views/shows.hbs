@@ -5,29 +5,31 @@
 		<div class="[ col-xs-12 col-sm-offset-2 col-sm-8 ]">
 			<ul class="event-list">
 			<!-- EVENT 2 -->
-			<li>
-				<time datetime="2018-20-18 0000">
-					<span class="day">15</span>
-					<span class="month">FEB</span>
-					<span class="year">2018</span>
-					<span class="time">4:00 PM</span>
-				</time>
-				<div class="info">
-					<h2 class="title">Beat Kitchen</h2>
-					<p class="desc">2100 W Belmont Ave, Chicago IL, 60618</p>
-					<ul>
-							<a  target="_blank" href="https://www.ticketweb.com/event/illi-sasha-go-hard-beat-kitchen-tickets/9066015?REFERRAL_ID=twfb&pl=kickstand&edpPlParam=%3Fpl%3Dkickstand"><li style="width:100%;"><span class="fa fa-envelope"></span>Get Tickets</li></a>
-						<!-- <li style="width:50%;"><a href="#website"><span class="fa fa-globe"></span> 7pm-10pm</a></li> -->
-						<!-- <li style="width:50%;"><span class="fa fa-money"></span> $39.99</li> -->
-					</ul>
-				</div>
-				<div class="social">
-					<ul>
-						<li class="facebook" style="width:50%;"><a href="https://www.instagram.com/mattmuse12"><span class="fa fa-instagram"></span></a></li>
-						<li class="twitter" style="width:50%;"><a href="https://www.twitter.com/mattmuse12"><span class="fa fa-twitter"></span></a></li>
-					</ul>
-				</div>
-			</li>
+			{{#each shows}}
+				<li>
+					<time datetime="2018-20-18 0000">
+						<span class="day">{{this.day}}</span>
+						<span class="month">{{this.month}}</span>
+						<span class="year">2018</span>
+						{{!-- <span class="time">4:00 PM</span> --}}
+					</time>
+					<div class="info">
+						<h2 class="title">{{this.title}}</h2>
+						<p class="desc">{{this.location}}</p>
+						<ul>
+								<a  target="_blank" href={{this.link}}><li style="width:100%;"><span class="fa fa-envelope"></span>Get Tickets</li></a>
+							<!-- <li style="width:50%;"><a href="#website"><span class="fa fa-globe"></span> 7pm-10pm</a></li> -->
+							<!-- <li style="width:50%;"><span class="fa fa-money"></span> $39.99</li> -->
+						</ul>
+					</div>
+					<div class="social">
+						<ul>
+							<li class="facebook" style="width:50%;"><a href="https://www.instagram.com/mattmuse12"><span class="fa fa-instagram"></span></a></li>
+							<li class="twitter" style="width:50%;"><a href="https://www.twitter.com/mattmuse12"><span class="fa fa-twitter"></span></a></li>
+						</ul>
+					</div>
+				</li>
+			{{/each}}
 			</ul>
 		</div>
 	</div>

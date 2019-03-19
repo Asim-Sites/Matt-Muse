@@ -42,6 +42,8 @@ router.get('/photos', (req,res) => {
 
 router.get('/shows', (req,res) => {
     Event.find().then((shows) => {
+        console.log("shows:", shows);
+        
         res.render("shows", {shows} );
     }).catch(err => {
         console.log(err);
