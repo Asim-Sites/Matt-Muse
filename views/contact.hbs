@@ -8,8 +8,11 @@
 
             <h1>Contact Matt Muse</h1>
 
-            <p class="lead">Fill out this form to contact Matt Muse regarding any inquires, questions or comments.</p>
-
+            {{#if successMsg}}
+                <p class="lead">{{successMsg}}<p>
+            {{else}}
+                <p class="lead">Fill out this form to contact Matt Muse regarding any inquires, questions or comments.</p>
+            {{/if}}
 
             <form id="contact-form" method="post" action="/contact" role="form">
 
@@ -64,7 +67,6 @@
                 </div>
 
             </form>
-
         </div><!-- /.8 -->
 
     </div> <!-- /.row-->
@@ -72,6 +74,11 @@
 </div>
 
 <style>
+    .msg-success-msg {
+        color: #fff;
+        font-family: afora;
+        font-size: 1.2em
+    }
     html {
         position: relative;
         min-height: 100%;

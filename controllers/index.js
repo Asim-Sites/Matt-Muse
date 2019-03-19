@@ -70,7 +70,7 @@ router.post('/contact', (req,res) => {
     // using SendGrid's v3 Node.js Library
     // https://github.com/sendgrid/sendgrid-nodejs
     const msg = {
-    to: 'asimzaidih@gmail.com',
+    to: 'eddie@abstract-mgmt.com',
     from: `"${name}" <${email}>`,
     subject: 'Matt Muse Form 🎧 ✔',
     text: message,
