@@ -1,0 +1,86 @@
+@import url('http://getbootstrap.com/dist/css/bootstrap.css');
+/* @font-face {
+    font-family: afora;
+    src: url(../bebas_neue/BebasNeueRegular.otf);
+} */
+html {
+    position: relative;
+    min-height: 100%;
+    background-color: rgb(11, 11, 11);
+}
+body {
+    background-color: rgb(11, 11, 11) !important;
+}
+/* body {
+    background: url(./biobg.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+} */
+.bio-page {
+    margin-bottom: 10em;
+}
+.container {
+    background-color: transparent;
+    text-align: center;
+    /* margin-top: 7em; */
+}
+
+h2 {
+    font-family: afora !important;
+    color: white !important;
+    font-size: 2.4em !important;
+}
+
+img {
+    margin-top: 7em;
+    max-width: 36vw;
+}
+
+.bio-text {
+    color: white;
+    margin-top: 1em;
+    font-family: inherit;
+    font-size: 1.3em;
+    font-weight: 300;
+    /* max-width: 55vw; */
+    text-align: left;
+    padding: 1em 10em;
+    line-height: 40px;
+    /* line-height: 25px; */
+}
+/* 
+.container-table {
+    display: table;
+}
+.vertical-center-row {
+    display: table-cell;
+    vertical-align: middle;
+} */
+
+/* p {
+    padding-top: 12px;
+    font-size: 40px;
+    font-family: afora;
+} */
+.social-box {
+    width: 230px;
+    height: 70px;
+    background-color: #ffffff;
+    margin: 5px;
+}
+@media(max-width: 960px) {
+    img {
+        min-width: 80%; 
+        text-align: center;
+        margin: 5em auto 0em auto;
+    }
+    h2 {
+        font-size: 2em !important;
+    }
+    .bio-text {
+        padding: .6em .6em;
+        font-size: 1.2em;
+    }
+}
