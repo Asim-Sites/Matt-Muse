@@ -3,22 +3,31 @@
   <header class="v-header container">
 
     <div class="slideshow">
-      <div class="mySlides videoWrapper fullscreen-video-wrap">
-      <h1 class="vid-title">DON'T TWEAK VIDEO</h1>
-        <iframe
-          class="youtube-video"
-          src="https://www.youtube.com/embed/gfhQAl5y1Bs"
-          frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen controls>
-        </iframe>
+      <div id='mySlides' class='mySlides fade-in'>
+        <a href='https://open.spotify.com/album/07sBctKia7SyIQVlIJahV9?si=gCUA38icTrCuKQi3-hnKPA'>
+          <h1 class="vid-title">Ain't No</h1>
+          <img class='album-cov' src="./images/newpic.png" alt="New Pic" srcset="">
+        </a>
       </div>
-      <div class='mySlides'>
-        <h1 class="vid-title">New Single</h1>
-        <img class='album-cov' src="./images/newpic.png" alt="New Pic" srcset="">
+      <div id='mySlides' class="mySlides fade-in videoWrapper fullscreen-video-wrap">
+        <a href="https://www.youtube.com/embed/gfhQAl5y1Bs">
+          <h1 class="vid-title">DON'T TWEAK VIDEO</h1>
+        </a>
+          <div id='the-iframe mySlides'>
+            <iframe
+              id="video"
+              class="youtube-video"
+              src="https://www.youtube.com/embed/gfhQAl5y1Bs"
+              frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen controls>
+            </iframe>
+          </div>
       </div>
-      <div class='mySlides'>
-        <h1 class="vid-title">NAPPY TALK ALBUM</h1>
-        <img class='nappy-cov' src="./images/nappytalkbg.jpeg" alt="New Pic" srcset="">
+      <div id='mySlides' class='mySlides fade-in'>
+        <a href='/music'>
+          <h1 class="vid-title">NAPPY TALK MERCH</h1>
+          <img class='nappy-cov' src="./images/nappytalkbg.jpeg" alt="New Pic" srcset="">
+        </a>
         </div>  
     </div>
 
@@ -27,19 +36,25 @@
 
 <script>
   var slideIndex = 0;
-  carousel();
+  var vid = document.getElementsByTagName("iframe");
+  console.log('vid:', vid)
 
   function carousel() {
-    var i;
-    var x = document.getElementsByClassName("mySlides");
-    for (i = 0; i < x.length; i++) {
-      x[i].style.display = "none"; 
-    }
+    const slides = document.getElementsByClassName("mySlides");
+    for (let i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none"; 
+    };
     slideIndex++;
-    if (slideIndex > x.length) {slideIndex = 1} 
-    x[slideIndex-1].style.display = "block"; 
-    setTimeout(carousel, 2000); 
+    if (slideIndex > slides.length) {slideIndex = 1} 
+    slides[slideIndex-1].style.display = "block"; 
+    setTimeout(carousel, 3000);
   }
+
+    carousel();
+
+  $('#mySlides').mouseenter(function() {
+      clearInterval(interval);
+  });
 </script>
 
   {{!-- three different images --}}
