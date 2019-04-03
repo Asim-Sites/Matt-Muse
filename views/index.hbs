@@ -1,35 +1,39 @@
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 <link rel="stylesheet" href="./stylesheets/index.css">
 
   <header class="v-header container">
-
-    <div class="slideshow">
-      <div id='mySlides' class='mySlides fade-in'>
-        <a href='https://open.spotify.com/album/07sBctKia7SyIQVlIJahV9?si=gCUA38icTrCuKQi3-hnKPA'>
-          <h1 class="vid-title">Ain't No</h1>
-          <img class='album-cov' src="./images/newpic.png" alt="New Pic" srcset="">
-        </a>
-      </div>
-      <div id='mySlides' class="mySlides fade-in videoWrapper fullscreen-video-wrap">
-        <a href="https://www.youtube.com/embed/gfhQAl5y1Bs">
-          <h1 class="vid-title">DON'T TWEAK VIDEO</h1>
-        </a>
-          <div id='the-iframe mySlides'>
-            <iframe
-              id="video"
-              class="youtube-video"
-              src="https://www.youtube.com/embed/gfhQAl5y1Bs"
-              frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen controls>
-            </iframe>
-          </div>
-      </div>
-      <div id='mySlides' class='mySlides fade-in'>
-        <a href='/music'>
-          <h1 class="vid-title">NAPPY TALK MERCH</h1>
-          <img class='nappy-cov' src="./images/nappytalkbg.jpeg" alt="New Pic" srcset="">
-        </a>
+    {{!-- <div class="the-show"> --}}
+      {{!-- <i class="fas fa-arrow-left"></i> --}}
+      <div class="slideshow">
+        <div id='mySlides' class='mySlides fade-in'>
+          <a href='https://open.spotify.com/album/07sBctKia7SyIQVlIJahV9?si=gCUA38icTrCuKQi3-hnKPA'>
+            <h1 class="vid-title">'Ain't No'</h1>
+            <img class='album-cov' src="./images/newpic.png" alt="New Pic" srcset="">
+          </a>
+        </div>
+        <div id='mySlides' class="mySlides fade-in videoWrapper fullscreen-video-wrap">
+          <a href="https://www.youtube.com/embed/gfhQAl5y1Bs">
+            <h1 class="vid-title">'DON'T TWEAK'</h1>
+          </a>
+            <div id='the-iframe mySlides'>
+              <iframe
+                id="video"
+                class="youtube-video"
+                src="https://www.youtube.com/embed/gfhQAl5y1Bs"
+                frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen controls>
+              </iframe>
+            </div>
+        </div>
+        <div id='mySlides' class='mySlides fade-in'>
+          <a href='/music'>
+            <h1 class="vid-title">'NAPPY TALK'</h1>
+            <img class='nappy-cov' src="./images/nappytalkbg.jpeg" alt="New Pic" srcset="">
+          </a>
         </div>  
-    </div>
+      </div>
+      {{!-- <i class="fas fa-arrow-right"></i> --}}
+    {{!-- </div> --}}
 
   </header>
 
@@ -47,7 +51,7 @@
     slideIndex++;
     if (slideIndex > slides.length) {slideIndex = 1} 
     slides[slideIndex-1].style.display = "block"; 
-    setTimeout(carousel, 3000);
+    setTimeout(carousel, 7000);
   }
 
     carousel();

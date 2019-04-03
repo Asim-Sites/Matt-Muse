@@ -1,4 +1,6 @@
-.mySlides {display:none;}
+/* .mySlides {display:none;} */
+
+
 a {
     text-decoration: none;
     color: white;
@@ -40,10 +42,17 @@ body {
         max-height: 74vh;
         width: auto;
     }
+    .fas {
+        font-size: 3em;
+        color: white;
+    }
 }
 
 .slideshow {
-    margin: 0 auto;
+    margin-top: 3.4em;
+    margin-left: auto;
+    margin-right: auto;
+
 }
 
 .fade-in {
@@ -51,7 +60,7 @@ body {
 	animation-name: fadeInOpacity;
 	animation-iteration-count: 1;
 	animation-timing-function: ease-in;
-	animation-duration: 3s;
+	animation-duration: 7s;
 }
 
 @keyframes fadeInOpacity {
